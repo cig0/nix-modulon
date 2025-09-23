@@ -276,7 +276,7 @@ Unless otherwise stated, everything in this repo is covered by the following cop
 
 ```plaintext
 Automatic NixOS Module Importer.
-Copyright (C) 2025  Martín Cigorraga <cig0.github@gmail.com>
+Copyright (C) 2024  Martín Cigorraga <cig0.github@gmail.com>
 
 This program is free software: you can redistribute it and/or modify it
 under the terms of the GNU Affero General Public License v3 or later, as
