@@ -22,7 +22,7 @@ modulon/
 │   └── default.nix    # Core module collection logic
 ├── tests/
 │   └── default.nix    # Test derivations
-└── docs/              # Documentation
+└── .assets/docs/              # Documentation
 ```
 
 Thank you for considering contributing!
