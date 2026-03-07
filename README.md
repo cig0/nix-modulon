@@ -133,7 +133,7 @@ Look for **excludeModules =** in `lib/default.nix`.
 
 You have several ways to prevent files or directories from being imported:
 
-- Use **excludePaths**: Provide path fragments or patterns when calling the module importer function (see examples above). This is the most flexible method. Using leading/trailing slashes like "/dirname/" is recommended for excluding directories reliably.
+- Use **excludePaths**: Provide path fragments or patterns when calling the module importer function (see examples above). This is the most flexible method. Patterns use **infix matching**, meaning `/foo/` will match anywhere in the path (e.g., `/bar/foo/baz.nix`). Using leading/trailing slashes like "/dirname/" is recommended for excluding directories reliably.
 - Rename Files: Change a module's filename extension (e.g., **.nix.dis**) so it's no longer picked.
 - Directory Structure: Place modules you don't want automatically imported outside the directories listed in the dirs option.
 
@@ -276,7 +276,7 @@ Unless otherwise stated, everything in this repo is covered by the following cop
 
 ```plaintext
 Automatic NixOS Module Importer.
-Copyright (C) 2024  Martín Cigorraga <cig0.github@gmail.com>
+Copyright (C) 2024-2026  Martín Cigorraga <cig0.github@gmail.com>
 
 This program is free software: you can redistribute it and/or modify it
 under the terms of the GNU Affero General Public License v3 or later, as

@@ -49,13 +49,13 @@ This document tracks potential improvements for future versions of Modulon.
 
 ## Documentation
 
-### Clarify excludePaths behavior
+### ~~Clarify excludePaths behavior~~ ✅ Fixed
 
-**Issue:** `excludePaths` uses `hasInfix` which means `/foo/` matches anywhere in the path. This behavior could be clearer in documentation.
+~~**Issue:** `excludePaths` uses `hasInfix` which means `/foo/` matches anywhere in the path. This behavior could be clearer in documentation.~~
 
-**Potential solution:**
-- Document that patterns match anywhere in the path (not just at start/end)
-- Add examples showing how `/foo/` matches `/bar/foo/baz.nix`
+~~**Potential solution:**~~
+~~- Document that patterns match anywhere in the path (not just at start/end)~~
+~~- Add examples showing how `/foo/` matches `/bar/foo/baz.nix`~~
 - Consider adding `excludePathPrefixes` and `excludePathSuffixes` for more precise control
 
 **Severity:** Minor - documentation improvement
