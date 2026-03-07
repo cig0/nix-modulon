@@ -1,4 +1,4 @@
-![Dynamic NixOS Module Importer](.assets/modulon.png)
+![Dynamic NixOS Module Importer](.assets/images/modulon.png)
 
 <p align="center" style="font-size: 1.5em;">Introducing Modulon 🦾</p>
 
