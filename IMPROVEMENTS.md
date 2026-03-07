@@ -19,12 +19,12 @@ This document tracks potential improvements for future versions of Modulon.
 
 ## Pattern Detection
 
-### Reduce false positives
+### ~~Reduce false positives~~ ✅ Fixed
 
-**Issue:** The pattern `"}:"` is very broad and could match non-module files that happen to contain this string.
+~~**Issue:** The pattern `"}:"` is very broad and could match non-module files that happen to contain this string.~~
 
-**Potential solution:**
-- Require at least 2 patterns to match before considering a file a module
+~~**Potential solution:**~~
+~~- Require at least 2 patterns to match before considering a file a module~~
 - Add negative patterns (strings that indicate a file is NOT a module)
 - Weight patterns by specificity (e.g., `"options."` is more specific than `"}:"`)
 
@@ -34,14 +34,14 @@ This document tracks potential improvements for future versions of Modulon.
 
 ## Error Handling
 
-### Graceful directory handling
+### ~~Graceful directory handling~~ ✅ Fixed
 
-**Issue:** No graceful handling if a directory doesn't exist - will fail with a cryptic Nix error.
+~~**Issue:** No graceful handling if a directory doesn't exist - will fail with a cryptic Nix error.~~
 
-**Potential solution:**
-- Check if directory exists before attempting to read
-- Provide clear error message: "Modulon: Directory '/path/to/dir' does not exist"
-- Optionally: warn instead of fail for missing directories
+~~**Potential solution:**~~
+~~- Check if directory exists before attempting to read~~
+~~- Provide clear error message: "Modulon: Directory '/path/to/dir' does not exist"~~
+~~- Optionally: warn instead of fail for missing directories~~
 
 **Severity:** Low - but would improve user experience
 

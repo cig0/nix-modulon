@@ -10,7 +10,7 @@ let
   testFilesDrv = pkgs.runCommand "create-test-files" { } ''
     mkdir -p $out/test-dir/subdir
     echo '{ config, pkgs, ... }: { services.dummy.enable = true; }' > $out/test-dir/module1.nix
-    echo '{ options.myOpt = lib.mkOption { }; }' > $out/test-dir/subdir/module2.nix
+    echo '{ lib, ... }: { options.myOpt = lib.mkOption { }; }' > $out/test-dir/subdir/module2.nix
     echo 'pkgs.hello' > $out/test-dir/not-a-module.nix
     echo '{ config, ... }: { environment.systemPackages = [ pkgs.git ]; }' > $out/test-dir/configuration.nix
 

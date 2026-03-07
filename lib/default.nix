@@ -62,7 +62,9 @@ let
           content = builtins.readFile file;
         in
         !(lib.strings.hasInfix "@MODULON_SKIP" content) # Check if Modulon should skip the
-        && builtins.any (pattern: lib.strings.hasInfix pattern content) modulePatterns; # Check against `modulePatterns` if any pattern exists in the content
+        &&
+          builtins.length (builtins.filter (pattern: lib.strings.hasInfix pattern content) modulePatterns)
+          >= 2; # Require 2+ patterns to reduce false positives
 
       # Recursively collect .nix files from a directory
       collectModulesRec =
@@ -93,6 +95,8 @@ let
         in
         lib.flatten itemLists; # Flatten happens here now
     in
+    assert lib.assertMsg (builtins.pathExists dir)
+      "Modulon: Directory '${toString dir}' does not exist";
     collectModulesRec dir;
 in
 {
