@@ -39,7 +39,7 @@
         # Development shell
         devShells.default = pkgs.mkShell {
           packages = [
-            pkgs.fx # Hnady CLI JSON visualizer
+            pkgs.fx # Handy CLI JSON visualizer
             pkgs.jq # Useful for inspecting JSON output in checks
             pkgs.nixpkgs-fmt # For formatting Nix code
           ];

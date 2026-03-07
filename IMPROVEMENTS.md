@@ -64,11 +64,11 @@ This document tracks potential improvements for future versions of Modulon.
 
 ## Trivial
 
-### Typo in flake.nix
+### ~~Typo in flake.nix~~ ✅ Fixed
 
-**Issue:** Line 42 in flake.nix has "Hnady" instead of "Handy"
+~~**Issue:** Line 42 in flake.nix has "Hnady" instead of "Handy"~~
 
-**Fix:** `pkgs.fx # Hnady CLI JSON visualizer` → `pkgs.fx # Handy CLI JSON visualizer`
+~~**Fix:** `pkgs.fx # Hnady CLI JSON visualizer` → `pkgs.fx # Handy CLI JSON visualizer`~~
 
 **Severity:** Trivial
 

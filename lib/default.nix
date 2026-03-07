@@ -6,12 +6,16 @@
   ...
 }:
 let
-  # List of common configuration filenames to exclude automatically
-  excludeModules = [
+  # Filenames to exclude automatically (exact match)
+  excludeFilenames = [
     "configuration.nix"
     "flake.nix"
     "hardware-configuration.nix"
     "home.nix"
+  ];
+
+  # Path patterns to exclude automatically (infix match)
+  defaultExcludePaths = [
     ".git/"
     "/tests/"
   ];
@@ -39,13 +43,16 @@ let
       excludePaths ? [ ],
     }:
     let
+      # Combine user excludePaths with defaults
+      allExcludePaths = defaultExcludePaths ++ excludePaths;
+
       # Check if a path contains any of the special paths that should be excluded
       isExcludedPath =
         path:
         let
           strPath = toString path;
         in
-        builtins.any (excludePath: lib.strings.hasInfix excludePath strPath) excludePaths;
+        builtins.any (excludePath: lib.strings.hasInfix excludePath strPath) allExcludePaths;
 
       # Check if a file is likely a Nix module based on content patterns
       isNixModule =
@@ -68,7 +75,7 @@ let
             let
               fullPath = path + "/${name}";
             in
-            if type == "regular" && lib.hasSuffix ".nix" name && !(lib.elem name excludeModules) then
+            if type == "regular" && lib.hasSuffix ".nix" name && !(lib.elem name excludeFilenames) then
               # It's a potentially relevant .nix file
               if isExcludedPath fullPath then
                 [ ] # Skip files in excluded paths
@@ -91,15 +98,8 @@ in
 {
   # The final list of module paths to be imported
   imports =
-    lib.flatten (
-      # Map over each directory and collect modules
-      builtins.map (
-        dir:
-        collectModules {
-          inherit dir excludePaths;
-        }
-      ) dirs
-    )
+    # Map over each directory and collect modules (already flattened)
+    lib.concatMap (dir: collectModules { inherit dir excludePaths; }) dirs
     # Append any explicitly provided extra modules
     ++ extraModules;
 }
