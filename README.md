@@ -1,12 +1,12 @@
 ![Dynamic NixOS Module Importer](.assets/images/modulon.png)
 
-<p align="center" style="font-size: 1.5em;">Introducing Modulon 🦾</p>
+<p align="center" style="font-size: 1.5em;"><strong>Introducing Modulon 🦾</strong></p>
 
-<p align="center" style="font-size: 1.5em;"><em>A plug-and-play module management framework for NixOS flakes</em></p>
+<p align="center"><em>A plug-and-play module management framework for NixOS flakes</em></p>
 
 <br>
 
-**Works with:** NixOS • macOS (via Home Manager) • Generic GNU/Linux (via Home Manager)
+**Works with:** NixOS • GNU/Linux distros (via Home Manager) • macOS (via Home Manager)
 
 ---
 
