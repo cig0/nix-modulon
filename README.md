@@ -8,8 +8,6 @@
 
 <br>
 
----
-
 ## Quick Start
 
 1. **Add the flake input:**
