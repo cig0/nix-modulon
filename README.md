@@ -2,7 +2,7 @@
 
 <p align="center" style="font-size: 1.5em;"><strong>Introducing Modulon 🦾</strong></p>
 
-<p align="center"><em>A plug-and-play module management framework for NixOS & Nix flakes</em></p>
+<p align="center"><em>A plug-and-play module management framework for NixOS and Nix flakes</em></p>
 
 <p align="center">Works with NixOS • GNU/Linux distros & macOS via Home Manager</p>
 
@@ -46,7 +46,7 @@ in {
 }
 ```
 
-That's it! Modulon will automatically discover and import all valid NixOS modules from `./modules`.
+That's it! Modulon will automatically discover and import all valid NixOS adn Nix modules from `./modules`.
 
 ---
 
