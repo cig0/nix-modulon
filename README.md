@@ -52,15 +52,12 @@ That's it! Modulon will automatically discover and import all valid NixOS and Ni
 
 ## Table of Contents
 
-- [Quick Start](#quick-start)
-- **Documentation**
-  - [How It Works](.assets/docs/01-HOW-IT-WORKS.md) — Module discovery process and pattern matching
-  - [Configuration](.assets/docs/02-CONFIGURATION.md) — Options reference and defaults
-  - [Excluding Modules](.assets/docs/03-EXCLUDING-MODULES.md) — excludePaths, @MODULON_SKIP tag
-  - [Extra Modules](.assets/docs/04-EXTRA-MODULES.md) — Including specific modules from excluded paths
-  - [Testing](.assets/docs/05-TESTING.md) — Running and debugging flake checks
-  - [Contributing](.assets/docs/06-CONTRIBUTING.md) — How to contribute
-- [License](#license)
+- [How It Works](.assets/docs/01-HOW-IT-WORKS.md) — Module discovery process and pattern matching
+- [Configuration](.assets/docs/02-CONFIGURATION.md) — Options reference and defaults
+- [Excluding Modules](.assets/docs/03-EXCLUDING-MODULES.md) — excludePaths, @MODULON_SKIP tag
+- [Extra Modules](.assets/docs/04-EXTRA-MODULES.md) — Including specific modules from excluded paths
+- [Testing](.assets/docs/05-TESTING.md) — Running and debugging flake checks
+- [Contributing](.assets/docs/06-CONTRIBUTING.md) — How to contribute
 
 ---
 
