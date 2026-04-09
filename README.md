@@ -59,7 +59,7 @@ That's it! Modulon will automatically discover and import all valid NixOS and Ni
 - [Testing](.assets/docs/05-TESTING.md) — Running and debugging flake checks
 - [Contributing](.assets/docs/06-CONTRIBUTING.md) — How to contribute
 
----
+<br>
 
 ## License
 
