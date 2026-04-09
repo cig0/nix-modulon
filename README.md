@@ -48,7 +48,7 @@ in {
 
 That's it! Modulon will automatically discover and import all valid NixOS and Nix modules from `./modules`
 
----
+<br>
 
 ## Table of Contents
 
