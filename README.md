@@ -66,7 +66,7 @@ That's it! Modulon will automatically discover and import all valid NixOS and Ni
 Unless otherwise stated, everything in this repo is covered by the following copyright notice:
 
 ```plaintext
-Automatic NixOS Module Importer.
+Modulon - An automatic NixOS/Nix Module Importer.
 Copyright (C) 2024-2026  Martín Cigorraga <cig0.github@gmail.com>
 
 This program is free software: you can redistribute it and/or modify it
