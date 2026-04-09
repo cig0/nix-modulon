@@ -4,7 +4,7 @@
 
 <p align="center"><em>A plug-and-play module management framework for NixOS & Nix flakes</em></p>
 
-<p align="center">**Works with:** NixOS • GNU/Linux distros (via Home Manager) • macOS (via Home Manager)</p>
+<p align="center">Works with NixOS • GNU/Linux distros & macOS via Home Manager</p>
 
 <br>
 
