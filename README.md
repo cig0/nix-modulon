@@ -6,7 +6,11 @@
 
 <p align="center">Works with NixOS • GNU/Linux distros & macOS via Home Manager</p>
 
-<br>
+<br><br>
+
+<p align="center"><strong>[</strong> REPOSITORY ARCHIVED <strong>]</strong> :: Modulon is now part of Ignite @ <strong>cig0/nix-ignite</strong></p>
+
+<br><br>
 
 ## Quick Start
 
